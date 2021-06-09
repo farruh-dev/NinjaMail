@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container-main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list .nav-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-list .nav-list-item .bottom-line {
+  background-color: #4ba87d;
+  width: 90%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-list .sign-up-item {
+  background-color: #4ba87d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-left: 20px;
+}
+
+.nav-list .sign-up-item a {
+  color: #fff;
+}
+
+.nav-list .sign-up-item:hover {
+  background-color: rgba(75, 168, 125, 0.3);
+}
+
+.nav-list .sign-up-item:hover .nav-sign-up {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-list .nav-list-item:hover .bottom-line {
+  height: 100%;
+}
+
+.nav-list .nav-link {
+  line-height: 20px;
+  color: black;
+  z-index: 2;
+}
+
+.nav-list .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem !important;
+}
+/*# sourceMappingURL=style.css.map */

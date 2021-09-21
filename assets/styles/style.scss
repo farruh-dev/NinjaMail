@@ -12,90 +12,96 @@ a{
     text-decoration: none !important;
 }
 
-.container-main{
-    width: 74%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.nav-list{
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-     padding: 0;
-     margin: 0;
-    .nav-list-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        transition: all 0.3s;
-        .bottom-line{
-            background-color: rgba(75, 168, 125, 1);
-            width: 90%;
-            height: 5px;
-            position:absolute;
-            bottom: 0;
-            transition: all 0.3s;
+.navbar{
+    .container-fluid{
+        padding: 0 150px !important;
+        .navbar-brand{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+            font-size: 2rem !important;
+            line-height: 41px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, 1);
+            &:hover{
+                color: rgba(0, 0, 0, 0.7);
+            }
+        }
+        
+        .nav-list{
+            display: flex;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+             padding: 0;
+             margin: 0;
+            .nav-list-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                transition: all 0.3s;
+                .bottom-line{
+                    background-color: rgba(75, 168, 125, 1);
+                    width: 90%;
+                    height: 5px;
+                    position:absolute;
+                    bottom: 0;
+                    transition: all 0.3s;
+                }
+            }
+        
+            .sign-up-item{
+                background-color: rgba(75, 168, 125, 1);
+                transition: all 0.3s;
+                margin-left: 20px;
+                a{
+                    color: #fff;
+                }
+                // border: 2px solid rgba(75, 168, 125, 1);
+            }
+        
+            .sign-up-item:hover{
+                background-color:rgba(75, 168, 125, 0.3);      
+            }
+        
+            .sign-up-item:hover .nav-sign-up {
+                color: rgba(0, 0, 0, 0.7);
+            }
+        
+            .nav-list-item:hover .bottom-line{
+                height: 100%;
+            }
+            .nav-link{
+                line-height: 20px;
+                color: rgba(0, 0, 0, 1);
+                z-index: 2;
+            }
+            .nav-link:hover{
+                color: #fff;
+            }
         }
     }
-
-    .sign-up-item{
-        background-color: rgba(75, 168, 125, 1);
-        transition: all 0.3s;
-        margin-left: 20px;
-        a{
-            color: #fff;
-        }
-        // border: 2px solid rgba(75, 168, 125, 1);
-    }
-
-    .sign-up-item:hover{
-        background-color:rgba(75, 168, 125, 0.3);      
-    }
-
-    .sign-up-item:hover .nav-sign-up {
-        color: rgba(0, 0, 0, 0.7);
-    }
-
-    .nav-list-item:hover .bottom-line{
-        height: 100%;
-    }
-    .nav-link{
-        line-height: 20px;
-        color: rgba(0, 0, 0, 1);
-        z-index: 2;
-    }
-    .nav-link:hover{
-        color: #fff;
-    }
 }
 
-.navbar-brand{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 2rem !important;
-    line-height: 41px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(0, 0, 0, 1);
-}
 
-.navbar-brand:hover{
-    color: rgba(0, 0, 0, 0.7);
-}
 
 .main-heading-sec{
-    .container-main{
+    padding: 100px 0;
+    background-image: url(../../img/main-sec/Rectangle1.svg), url(../../img/main-sec/Ellipse1.svg), url(../../img/main-sec/Ellipse2.svg);
+    background-repeat: no-repeat;
+    background-position: 30% 15%, 60% 18%;
+
+
+    .container{
         display: flex;
         justify-content: flex-start;
         position: relative;
 
         .main-girl{
             position: absolute;
-            z-index: -1;
             right: 0;
             align-self: center;
             width: 65%;
@@ -103,16 +109,17 @@ a{
         }
 
         .header-part{
-            width: 40%;
+            width: 45%;
             margin-top: 150px;
             margin-bottom: 150px;
             margin-left: 50px;
             display: inline-flex;
             flex-direction: column;
+            z-index: 2;
             .header{
                 font-family: 'Playfair Display', serif;
                 font-weight: 900;
-                font-size: 52px;
+                font-size: 4rem;
                 margin-bottom: 30px;
             }
             .header-p{
@@ -138,7 +145,7 @@ a{
                     transition: all 0.3s;
                 }
                 .get-demo{
-                    padding: 15px 35px;
+                    padding: 15px 40px;
                     background-color: rgba(255, 255, 255, 0.5);
                     color: rgba(75, 168, 125, 1);
                     border: 2px solid rgba(75, 168, 125, 1);

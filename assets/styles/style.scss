@@ -12,6 +12,10 @@ a{
     text-decoration: none !important;
 }
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 
 .navbar{
     .container-fluid{
@@ -90,9 +94,29 @@ a{
 
 .main-heading-sec{
     padding: 100px 0;
-    background-image: url(../../img/main-sec/Rectangle1.svg), url(../../img/main-sec/Ellipse1.svg), url(../../img/main-sec/Ellipse2.svg);
+    background-image: url(../../img/main-sec/Rectangle1.svg),
+                        url(../../img/main-sec/Ellipse1.svg),
+                        url(../../img/main-sec/Ellipse6.svg),
+                        url(../../img/main-sec/Ellipse3.svg),
+                        url(../../img/main-sec/Ellipse5.svg),
+                        url(../../img/main-sec/Ellipse2.svg),
+                        url(../../img/main-sec/Rectangle2.svg),
+                        url(../../img/main-sec/Rectangle3.svg),
+                        url(../../img/main-sec/Rectangle3.svg),
+                        url(../../img/main-sec/Rectangle9.svg),
+                        url(../../img/main-sec/Rectangle10.svg);
     background-repeat: no-repeat;
-    background-position: 30% 15%, 60% 18%;
+    background-position: 30% 15%,
+                         60% 18%,
+                         3% 3%,
+                         90% 8%,
+                         16% 60%,
+                         50% 90%,
+                         20% 93%,
+                         87% 20%,
+                         -3% 66%,
+                         75% 14%,
+                         6% 22% ;
 
 
     .container{
@@ -169,6 +193,115 @@ a{
                 }
             }
         
+        }
+    } 
+}
+
+.reach_customer_sec{
+    padding: 150px 0;
+    background-color: #f7f7f7;
+    background-image: url(../../img/secondSection/slash_blackslash.svg);     
+    background-position: 20% 90%;               
+    background-repeat: no-repeat;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .video{
+            align-self: center;
+            box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1608);
+        }
+
+        .header-part{
+            position: absolute;
+            display: inline-flex;
+            flex-direction: column;
+            z-index: 2;
+            .header{
+                color: #fff;
+                font-family: 'Playfair Display', serif;
+                font-weight: 900;
+                font-size: 3.8rem;
+                margin-bottom: 30px;
+                margin-bottom: 60px;
+            }
+
+            .header-links{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .learn_how{
+                    border: none;
+                    outline: none;
+                    padding: 15px 40px;
+                    background-color: #fff;
+                    color: rgba(75, 168, 125, 1);
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 25px;
+                    transition: all 0.3s; 
+
+                    &:hover{
+                        background-color: rgb(75, 168, 125);
+                        color: #fff;
+                    }
+
+                }
+            }
+        
+        }
+    } 
+}
+
+
+.provement_sec{
+    padding: 150px 0;
+    background-color: #f7f7f7;
+    background-image: url(../../img/secondSection/SlantedGreenBG.png);     
+    background-position: center; 
+    background-size: cover;              
+    background-repeat: no-repeat;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .cards{
+            min-height: 550px;
+            display: flex;
+
+            .card{
+                width: 360px;
+                margin: 0 25px;
+                background-color: #fff;
+
+                box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
+    
+                .texts{
+                    padding: 30px;
+                    font-family: 'Raleway', sans-serif;
+
+                    p{
+                        line-height: 30px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .card1{
+                margin-bottom: auto;
+            } 
+            .card2{
+                margin-top: auto;
+            }
         }
     } 
 }

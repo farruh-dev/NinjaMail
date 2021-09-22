@@ -200,8 +200,10 @@ body{
 .reach_customer_sec{
     padding: 150px 0;
     background-color: #f7f7f7;
-    background-image: url(../../img/secondSection/slash_blackslash.svg);     
-    background-position: 20% 90%;               
+    background-image: url(../../img/secondSection/slash_blackslash.svg),
+                        url(../../img/secondSection/wave.svg);     
+    background-position: 20% 90%,
+                          0 100% ;               
     background-repeat: no-repeat;
 
     .container{
@@ -261,11 +263,10 @@ body{
 
 
 .provement_sec{
-    padding: 150px 0;
-    background-color: #f7f7f7;
-    background-image: url(../../img/secondSection/SlantedGreenBG.png);     
+    
+    background-color: #CAEAC7;
+    // background-image: url(../../img/secondSection/SlantedGreenBG.png);     
     background-position: center; 
-    background-size: cover;              
     background-repeat: no-repeat;
 
     .container{
@@ -277,6 +278,7 @@ body{
         .cards{
             min-height: 550px;
             display: flex;
+            margin: 0 0 0 50px;            
 
             .card{
                 width: 360px;
@@ -284,7 +286,12 @@ body{
                 background-color: #fff;
 
                 box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
-    
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
                 .texts{
                     padding: 30px;
                     font-family: 'Raleway', sans-serif;
@@ -301,6 +308,95 @@ body{
             } 
             .card2{
                 margin-top: auto;
+            }
+        }
+
+        .heading{
+            margin: 25px;
+
+            h2{
+                font-family: 'Playfair Display', serif;
+                font-size: 2.6rem;
+                font-weight: 900;
+                margin: 30px 0;
+            }
+
+            p{
+                font-family: "Raleway", serif;
+                width: 70%;
+                line-height: 30px;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    } 
+}
+
+#send_email_sec{
+    
+    background-color: #fff;
+    background-image: url(../../img/secondSection/wavebottom2.svg);     
+    background-position: 0 -3%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .cards{
+            display: flex;
+
+            .card{
+                width: 360px;
+                margin: auto 25px;
+                background-color: #fff;
+                position: relative;
+
+                box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .texts{
+                    padding: 30px;
+                    position: absolute;
+                    p{
+                        line-height: 30px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .card1{
+                margin-bottom: auto;
+            } 
+            .card2{
+                margin-top: auto;
+            }
+        }
+
+        .heading{
+            margin: 25px;
+
+            h2{
+                font-family: 'Playfair Display', serif;
+                font-size: 2.6rem;
+                font-weight: 900;
+                margin: 30px 0;
+            }
+
+            p{
+                font-family: "Raleway", serif;
+                width: 70%;
+                line-height: 30px;
+                font-weight: 500;
+                font-size: 18px;
             }
         }
     } 

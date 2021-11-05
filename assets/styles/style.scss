@@ -1,26 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul{
-    list-style: none;   
+ul {
+    list-style: none;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
 
-.navbar{
-    .container-fluid{
+.navbar {
+    .container-fluid {
         padding: 0 150px !important;
-        .navbar-brand{
+
+        .navbar-brand {
             font-family: 'Raleway', sans-serif;
             font-weight: 800;
             font-size: 2rem !important;
@@ -29,61 +30,68 @@ body{
             align-items: center;
             justify-content: center;
             color: rgba(0, 0, 0, 1);
-            &:hover{
+
+            &:hover {
                 color: rgba(0, 0, 0, 0.7);
             }
         }
-        
-        .nav-list{
+
+        .nav-list {
             display: flex;
             font-family: 'Raleway', sans-serif;
             font-size: 16px;
             font-weight: 800;
-             padding: 0;
-             margin: 0;
-            .nav-list-item{
+            padding: 0;
+            margin: 0;
+
+            .nav-list-item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 position: relative;
                 transition: all 0.3s;
-                .bottom-line{
+
+                .bottom-line {
                     background-color: rgba(75, 168, 125, 1);
                     width: 90%;
                     height: 5px;
-                    position:absolute;
+                    position: absolute;
                     bottom: 0;
                     transition: all 0.3s;
                 }
             }
-        
-            .sign-up-item{
+
+            .sign-up-item {
                 background-color: rgba(75, 168, 125, 1);
                 transition: all 0.3s;
                 margin-left: 20px;
-                a{
+
+                a {
                     color: #fff;
                 }
+
                 // border: 2px solid rgba(75, 168, 125, 1);
             }
-        
-            .sign-up-item:hover{
-                background-color:rgba(75, 168, 125, 0.3);      
+
+            .sign-up-item:hover {
+                background-color: rgba(75, 168, 125, 0.3);
             }
-        
+
             .sign-up-item:hover .nav-sign-up {
                 color: rgba(0, 0, 0, 0.7);
             }
-        
-            .nav-list-item:hover .bottom-line{
+
+            .nav-list-item:hover .bottom-line {
                 height: 100%;
             }
-            .nav-link{
+
+            .nav-link {
                 line-height: 20px;
                 color: rgba(0, 0, 0, 1);
                 z-index: 2;
             }
-            .nav-link:hover{
+
+            .nav-link:hover {
                 color: #fff;
             }
         }
@@ -92,39 +100,39 @@ body{
 
 
 
-.main-heading-sec{
+.main-heading-sec {
     padding: 100px 0;
     background-image: url(../../img/main-sec/Rectangle1.svg),
-                        url(../../img/main-sec/Ellipse1.svg),
-                        url(../../img/main-sec/Ellipse6.svg),
-                        url(../../img/main-sec/Ellipse3.svg),
-                        url(../../img/main-sec/Ellipse5.svg),
-                        url(../../img/main-sec/Ellipse2.svg),
-                        url(../../img/main-sec/Rectangle2.svg),
-                        url(../../img/main-sec/Rectangle3.svg),
-                        url(../../img/main-sec/Rectangle3.svg),
-                        url(../../img/main-sec/Rectangle9.svg),
-                        url(../../img/main-sec/Rectangle10.svg);
+        url(../../img/main-sec/Ellipse1.svg),
+        url(../../img/main-sec/Ellipse6.svg),
+        url(../../img/main-sec/Ellipse3.svg),
+        url(../../img/main-sec/Ellipse5.svg),
+        url(../../img/main-sec/Ellipse2.svg),
+        url(../../img/main-sec/Rectangle2.svg),
+        url(../../img/main-sec/Rectangle3.svg),
+        url(../../img/main-sec/Rectangle3.svg),
+        url(../../img/main-sec/Rectangle9.svg),
+        url(../../img/main-sec/Rectangle10.svg);
     background-repeat: no-repeat;
     background-position: 30% 15%,
-                         60% 18%,
-                         3% 3%,
-                         90% 8%,
-                         16% 60%,
-                         50% 90%,
-                         20% 93%,
-                         87% 20%,
-                         -3% 66%,
-                         75% 14%,
-                         6% 22% ;
+        60% 18%,
+        3% 3%,
+        90% 8%,
+        16% 60%,
+        50% 90%,
+        20% 93%,
+        87% 20%,
+        -3% 66%,
+        75% 14%,
+        6% 22%;
 
 
-    .container{
+    .container {
         display: flex;
         justify-content: flex-start;
         position: relative;
 
-        .main-girl{
+        .main-girl {
             position: absolute;
             right: 0;
             align-self: center;
@@ -132,7 +140,7 @@ body{
             box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1608);
         }
 
-        .header-part{
+        .header-part {
             width: 45%;
             margin-top: 150px;
             margin-bottom: 150px;
@@ -140,24 +148,27 @@ body{
             display: inline-flex;
             flex-direction: column;
             z-index: 2;
-            .header{
+
+            .header {
                 font-family: 'Playfair Display', serif;
                 font-weight: 900;
                 font-size: 4rem;
                 margin-bottom: 30px;
             }
-            .header-p{
+
+            .header-p {
                 font-family: 'Raleway', sans-serif;
                 font-weight: 500;
                 font-size: 18px;
                 margin-bottom: 30px;
             }
 
-            .header-links{
+            .header-links {
                 width: 100%;
                 display: flex;
                 justify-content: flex-start;
-                .try-now{
+
+                .try-now {
                     padding: 15px 40px;
                     background-color: rgba(75, 168, 125, 1);
                     border: 2px solid rgba(75, 168, 125, 1);
@@ -165,10 +176,11 @@ body{
                     font-family: 'Raleway', sans-serif;
                     font-weight: 900;
                     font-size: 18px;
-                    line-height: 25px; 
+                    line-height: 25px;
                     transition: all 0.3s;
                 }
-                .get-demo{
+
+                .get-demo {
                     padding: 15px 40px;
                     background-color: rgba(255, 255, 255, 0.5);
                     color: rgba(75, 168, 125, 1);
@@ -177,52 +189,54 @@ body{
                     font-weight: 900;
                     font-size: 18px;
                     line-height: 25px;
-                    transition: all 0.3s; 
+                    transition: all 0.3s;
                     margin: 0 40px;
                 }
-    
-                .try-now:hover{
+
+                .try-now:hover {
                     background-color: rgba(75, 168, 125, 0.3);
                     color: rgba(0, 0, 0, 0.7);
                     border-color: rgba(75, 168, 125, 0.2);
                 }
-                .get-demo:hover{
+
+                .get-demo:hover {
                     background-color: rgba(75, 168, 125, 0.3);
                     color: rgba(0, 0, 0, 0.7);
                     border-color: rgba(75, 168, 125, 0.2);
                 }
             }
-        
+
         }
-    } 
+    }
 }
 
-.reach_customer_sec{
+.reach_customer_sec {
     padding: 150px 0;
     background-color: #f7f7f7;
     background-image: url(../../img/secondSection/slash_blackslash.svg),
-                        url(../../img/secondSection/wave.svg);     
+        url(../../img/secondSection/wave.svg);
     background-position: 20% 90%,
-                          0 100% ;               
+        0 100%;
     background-repeat: no-repeat;
 
-    .container{
+    .container {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
 
-        .video{
+        .video {
             align-self: center;
             box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1608);
         }
 
-        .header-part{
+        .header-part {
             position: absolute;
             display: inline-flex;
             flex-direction: column;
             z-index: 2;
-            .header{
+
+            .header {
                 color: #fff;
                 font-family: 'Playfair Display', serif;
                 font-weight: 900;
@@ -231,13 +245,13 @@ body{
                 margin-bottom: 60px;
             }
 
-            .header-links{
+            .header-links {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                .learn_how{
+                .learn_how {
                     border: none;
                     outline: none;
                     padding: 15px 40px;
@@ -247,81 +261,82 @@ body{
                     font-weight: 900;
                     font-size: 18px;
                     line-height: 25px;
-                    transition: all 0.3s; 
+                    transition: all 0.3s;
 
-                    &:hover{
+                    &:hover {
                         background-color: rgb(75, 168, 125);
                         color: #fff;
                     }
 
                 }
             }
-        
+
         }
-    } 
+    }
 }
 
 
-.provement_sec{
-    
+.provement_sec {
+
     background-color: #CAEAC7;
     // background-image: url(../../img/secondSection/SlantedGreenBG.png);     
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
 
-    .container{
+    .container {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
 
-        .cards{
+        .cards {
             min-height: 550px;
             display: flex;
-            margin: 0 0 0 50px;            
+            margin: 0 0 0 50px;
 
-            .card{
+            .card {
                 width: 360px;
                 margin: 0 25px;
                 background-color: #fff;
 
                 box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
 
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                 }
 
-                .texts{
+                .texts {
                     padding: 30px;
                     font-family: 'Raleway', sans-serif;
 
-                    p{
+                    p {
                         line-height: 30px;
                         font-weight: 500;
                     }
                 }
             }
 
-            .card1{
+            .card1 {
                 margin-bottom: auto;
-            } 
-            .card2{
+            }
+
+            .card2 {
                 margin-top: auto;
             }
         }
 
-        .heading{
+        .heading {
             margin: 25px;
 
-            h2{
+            h2 {
                 font-family: 'Playfair Display', serif;
                 font-size: 2.6rem;
                 font-weight: 900;
                 margin: 30px 0;
             }
 
-            p{
+            p {
                 font-family: "Raleway", serif;
                 width: 70%;
                 line-height: 30px;
@@ -329,28 +344,29 @@ body{
                 font-size: 18px;
             }
         }
-    } 
+    }
 }
 
-#send_email_sec{
-    
-    background-color: #fff;
-    background-image: url(../../img/secondSection/wavebottom2.svg);     
-    background-position: 0 -3%; 
-    background-repeat: no-repeat;
-    background-size: cover;
+#send_email_sec {
 
-    .container{
+    background-color: #fff;
+    background-image: url(../../img/secondSection/wavebottom2.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: relative;
+        padding: 50px 0;
 
-        .cards{
+        .cards {
             display: flex;
+            margin-top: 100px;
 
-            .card{
+            .card {
                 width: 360px;
                 margin: auto 25px;
                 background-color: #fff;
@@ -358,47 +374,209 @@ body{
 
                 box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
 
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                 }
 
-                .texts{
+                .texts {
                     padding: 30px;
                     position: absolute;
-                    p{
+
+                    p {
                         line-height: 30px;
                         font-weight: 500;
                     }
                 }
             }
 
-            .card1{
+            .card1 {
                 margin-bottom: auto;
-            } 
-            .card2{
+            }
+
+            .card2 {
                 margin-top: auto;
             }
         }
 
-        .heading{
+        .heading {
             margin: 25px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            h2{
+            h2 {
                 font-family: 'Playfair Display', serif;
                 font-size: 2.6rem;
                 font-weight: 900;
                 margin: 30px 0;
+                text-align: center;
             }
 
-            p{
-                font-family: "Raleway", serif;
-                width: 70%;
-                line-height: 30px;
-                font-weight: 500;
-                font-size: 18px;
+            .inputField {
+                input {
+                    width: 410px;
+                    height: 60px;
+                    padding: 10px;
+                    background: #FFFFFF;
+                    border: 1px solid #9F9F9F;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    outline: none;
+
+                }
+
+                button {
+                    padding: 15px 40px;
+                    background-color: rgba(75, 168, 125, 1);
+                    border: 2px solid rgba(75, 168, 125, 1);
+                    color: #fff;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 25px;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: rgba(75, 168, 125, 0.3);
+                        color: rgba(0, 0, 0, 0.7);
+                        border-color: rgba(75, 168, 125, 0.2);
+                    }
+                }
             }
+
+            .ads {
+                margin-top: 60px;
+                width: 50%;
+            }
+
+            .links {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
         }
-    } 
+
+    }
 }
 
+#start_today_section {
+    background-color: rgb(75, 168, 125);
+
+    .container {
+        .start_today {
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 60px;
+                font-weight: 400;
+                color: #fff;
+                margin: 30px 0;
+            }
+
+            a {
+                border: none;
+                outline: none;
+                padding: 15px 40px;
+                background-color: #fff;
+                color: rgba(75, 168, 125, 1);
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                font-size: 21px;
+                line-height: 25px;
+                transition: all 0.3s;
+                border: 3px solid transparent;
+
+                margin: 30px 0;
+
+                &:hover {
+                    background-color: rgb(75, 168, 125);
+                    color: #fff;
+                    border: 3px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    .container {
+        padding: 50px 0;
+        .top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            padding: 50px 0;
+
+            .logo {
+                width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 800;
+                    font-size: 2rem !important;
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+
+            .contents {
+                width: 60%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-evenly;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: start;
+                    text-align: start;
+
+
+                    a {
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 700;
+                        font-size: 19px;
+                        line-height: 22px;
+                        color: #000;
+                        margin-bottom: 10px;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            padding: 30px 0;
+
+            span,
+            a {
+                color: #000;
+                font-family: 'Raleway', serif;
+                font-weight: 700;
+            }
+        }
+    }
+}

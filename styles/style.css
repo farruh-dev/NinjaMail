@@ -302,7 +302,8 @@ body {
 
 .provement_sec {
   background-color: #CAEAC7;
-  background-position: center;
+  background-image: url(../../img/greenSection/Ellipse10.png), url(../../img/greenSection/Ellipse9.png), url(../../img/greenSection/Rectangle11.png), url(../../img/greenSection/Rectangle13.png), url(../../img/greenSection/Rectangle14.png), url(../../img/greenSection/Rectangle16.png), url(../../img/greenSection/Rectangle14.png), url(../../img/greenSection/Ellipse10.png);
+  background-position: 6% 100%, 100% 60%, 5% 10%, 16% 50%, 90% 0%, 70% 15%, 96% 100%, 90% 96%;
   background-repeat: no-repeat;
 }
 
@@ -331,6 +332,7 @@ body {
   width: 360px;
   margin: 0 25px;
   background-color: #fff;
+  position: relative;
   -webkit-box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.6);
 }
@@ -418,19 +420,50 @@ body {
           box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.6);
 }
 
+#send_email_sec .container .cards .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-32.5%, #000000), color-stop(67.78%, rgba(84, 84, 84, 0.0001)));
+  background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+}
+
 #send_email_sec .container .cards .card img {
   width: 100%;
   height: 100%;
 }
 
 #send_email_sec .container .cards .card .texts {
-  padding: 30px;
   position: absolute;
+  z-index: 20;
+  top: 65%;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#send_email_sec .container .cards .card .texts p {
-  line-height: 30px;
-  font-weight: 500;
+#send_email_sec .container .cards .card .texts .customer_name {
+  font-family: "Raleway", serif;
+  color: #fff;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+#send_email_sec .container .cards .card .texts .year {
+  font-family: "Raleway", serif;
+  color: #fff;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 700;
 }
 
 #send_email_sec .container .cards .card1 {

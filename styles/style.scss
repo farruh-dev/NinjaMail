@@ -279,8 +279,15 @@ body {
 .provement_sec {
 
     background-color: #CAEAC7;
-    // background-image: url(../../img/secondSection/SlantedGreenBG.png);     
-    background-position: center;
+    background-image: url(../../img/greenSection/Ellipse10.png),
+                        url(../../img/greenSection/Ellipse9.png),
+                        url(../../img/greenSection/Rectangle11.png),
+                        url(../../img/greenSection/Rectangle13.png),
+                        url(../../img/greenSection/Rectangle14.png),
+                        url(../../img/greenSection/Rectangle16.png),    
+                        url(../../img/greenSection/Rectangle14.png),
+                        url(../../img/greenSection/Ellipse10.png);
+    background-position: 6% 100%, 100% 60%, 5% 10%, 16% 50%, 90% 0%, 70% 15%, 96% 100%, 90% 96%;
     background-repeat: no-repeat;
 
     .container {
@@ -298,6 +305,7 @@ body {
                 width: 360px;
                 margin: 0 25px;
                 background-color: #fff;
+                position: relative;
 
                 box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
 
@@ -374,18 +382,43 @@ body {
 
                 box-shadow: 0 0 30px -15px rgba($color: #000000, $alpha: 0.6);
 
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
                 }
 
                 .texts {
-                    padding: 30px;
                     position: absolute;
+                    z-index: 20;
+                    top: 65%;
+                    left: 10%;
+                    display: flex;
+                    flex-direction: column;
 
-                    p {
-                        line-height: 30px;
-                        font-weight: 500;
+                    .customer_name {
+                        font-family: "Raleway", serif;
+                        color: #fff;
+                        font-size: 34px;
+                        line-height: 40px;
+                        font-weight: 900;
+                    }
+                    
+                    .year {
+                        font-family: "Raleway", serif;
+                        color: #fff;
+                        font-size: 19px;
+                        line-height: 22px;
+                        font-weight: 700;
                     }
                 }
             }
